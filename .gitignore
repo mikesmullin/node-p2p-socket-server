@@ -1,0 +1,5 @@
+/config.coffee
+/src/public/behaviors/global.js
+/src/public/stylesheets/global.css
+node_modules/
+npm-debug.log

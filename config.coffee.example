@@ -1,0 +1,16 @@
+module.exports =
+  bind:
+    # interface to bind to
+    ipv4: "0.0.0.0"
+
+    # port number to listen on
+    port: 3000
+
+  # address outside processes can use
+  public_address: "app01.example.org"
+
+  # list of peers to discover at startup
+  peers: [
+    "app02.example.org:3000"
+    "app03.example.org:3000"
+  ]

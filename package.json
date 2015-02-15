@@ -1,0 +1,42 @@
+{
+  "name": "node-p2p-socket-server",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "src/service.coffee",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon -e coffee,litcoffee --watch src src/service.litcoffee",
+    "test": "mocha --reporter spec --bail --ui bdd --colors --timeout 120000 --compilers coffee:coffee-script test/*.coffee --require coffee-script/register"
+  },
+  "author": "Mike Smullin <mike@smullindesign.com>",
+  "license": "GPLv2",
+  "dependencies": {
+    "body-parser": "*",
+    "coffee-script": "*",
+    "connect-coffee-script": "*",
+    "crc": "^3.2.1",
+    "engine.io": "*",
+    "engine.io-client": "*",
+    "express": "~4",
+    "hexy": "^0.2.7",
+    "jade": "*",
+    "lodash": "*",
+    "method-override": "*",
+    "morgan": "*",
+    "nib": "*",
+    "redis-scanstreams": "^1.0.1",
+    "redis-sentinel": "git://github.com/ortoo/node-redis-sentinel",
+    "serve-static": "*",
+    "stylus": "*",
+    "terminus": "^1.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "git://github.com/remy/nodemon",
+    "chai": "*",
+    "mocha": "*",
+    "supertest": "*"
+  }
+}
